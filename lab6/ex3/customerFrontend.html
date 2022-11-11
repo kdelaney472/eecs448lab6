@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>448Lab 6 Exercise 3</title>
+		<link rel="stylesheet" href="style.css" />
+		<?php include 'customerBackend.php'; ?>
+		<script type="text/javascript" src="formChecker.js" ></script>
+	</head>
+	<body>
+		<div id="title">
+			<h1>Algorithm-Generated Art Gallery 
+				<span id="dream">Art Source: <a href="https://dream.ai/create" target="_blank" rel="noopener noreferrer">dream by WOMBO</a></span>
+			</h1>
+		</div>
+		<div id="screen">
+		<form id="sForm" action="customerBackend.php" method="post">
+			<div class="items" id="item1">
+				<img src="item1.png">
+				<h2 class="price">$30
+				<input type="number" class="quants" id="forest" name="order1" value="" placeholder="0">
+				<label for="forest">"Forest Path"</label><br>
+				</h2>
+			</div>
+			<div class="items" id="item2">
+				<img src="item2.png">
+				<h2 class="price">$50
+				<input type="number" class="quants" id="cliff" name="order2" value="" placeholder="0">
+				<label for="cliff">"Cliffside"</label><br>
+				</h2>
+			</div>
+			<div class="items" id="item3">
+				<img src="item3.png">
+				<h2 class="price">$17
+				<input type="number" class="quants" id="serene" name="order3" value="" placeholder="0">
+				<label for="serene">"La cabane cachée"</label><br>
+				</h2>
+			</div>
+			
+			
+			<div class="cart">
+				<div class="login">
+					<p><b>Account</b></p>
+					Username: <input type="text" id="username" name="username" value="" placeholder="someone@example.com"><br>
+					Password: <input type="password" id="pw" name="pw" value="" placeholder="password">
+				</div>
+				
+				<div class="shipping">
+					<p><b>Delivery Options:</b></p>
+					<input type="radio" id="free" name="ship1" value="FREE 7 Day Shipping">
+						<label for="free">FREE 7 Day Shipping</label><br>
+					<input type="radio" id="night" name="ship1" value="$50 Over Night Shipping">
+						<label for="night">$50 Over Night Shipping</label><br>
+					<input type="radio" id="3day" name="ship1" value="$5 Three-Day Shipping">
+						<label for="3day">$5 Three-Day Shipping</label><br>
+				</div>
+					
+				<input type="submit" name="Submit" value="Submit">
+				<input type="reset" name="Reset" value="Reset">
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

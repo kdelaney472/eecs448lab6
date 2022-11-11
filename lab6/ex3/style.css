@@ -1,0 +1,215 @@
+body{
+	background-color: #c2b280;
+	
+	margin: 0;
+	padding: 0;
+	font-family: courier;
+
+}
+
+#title{
+	color: #8e3a59;
+	left:0;
+	top:0;
+	width:97%;
+	position: absolute; /* fixed for not being scrollable, absolute for being scrollable */
+	height:100px;
+	margin-left: 3%;
+}
+
+#dream{
+	font-size: 10pt;
+}
+
+.items{
+	width: 29%;
+	position: absolute; /* fixed for not being scrollable, absolute for being scrollable */
+	left: 0;
+	top:0;
+	background-color: #c0c0c0 ;
+	height: auto;
+	margin: 3%;
+	margin-top:100px; 
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+p{
+	padding-left:2%;
+}
+
+input[type=radio]{
+	width:17px; 
+	height:17px;
+	vertical-align: bottom;
+	margin-left:2%;
+}
+input[type=radio]:hover{
+	width:19px; 
+	height:19px;
+}
+
+input[type=checkbox]{
+	width:30px; 
+	height:30px;
+	vertical-align: -8px;
+	margin-left:7%;
+	border-radius:15%;
+}
+input[type=checkbox]:hover{
+	width:33px; 
+	height:33px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quants{
+	width:30px; 
+	max-width:auto;
+	height:30px;
+	vertical-align: 3px;
+	margin-left:7%;
+	border-radius:15%;
+	font-size:14pt;
+}
+.quants:hover, .quants:focus{
+	width:33px; 
+	height:33px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=submit]{	
+	position: absolute;
+	padding: 5px;
+	padding-left:15px;
+	padding-right:15px;
+	background-color: lightgreen;
+	font-size: 15pt;
+	border-radius: 20px;
+	margin-top:30px;
+	margin-left:600px;
+}
+input[type=submit]:hover{	
+	font-size:15.1pt;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=reset]{	
+	position: absolute;
+	padding: 5px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size: 15pt;
+	border-radius: 20px;
+	margin-top:77px;
+	margin-left:600px;
+}
+input[type=reset]:hover{	
+	font-size:15.1pt;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=text], input[type=number]{
+	border-radius:5px;
+	text-align: center;
+	padding:3px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;  
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=password]{
+	border-radius:5px;
+	text-align: center;
+	padding:3px;
+}
+
+img{
+	width: 96%;
+	border-radius: 15px;
+	padding: 2%;
+}
+
+.price{
+	padding-left: 2%;
+}
+
+#item2{
+	margin-left: 35%;
+}
+
+#item3{
+	margin-left: 67%;
+}
+
+.cart{
+	width:94%;
+	background-color: ; /* for testing purposes */
+	position: absolute; /* fixed for not being scrollable, absolute for being scrollable */
+	height:200px;
+	margin:3%;
+	margin-top: 70vh; /* means that top margin is the upper 70% of the screenspace */
+}
+.login{
+	padding-left:2%;
+	text-indent:-2%;
+	width:5%;
+	height:100%;
+	position: absolute; /* this is necessary for me to be able to position them horizontally when I'm organizing it all in nested divs like this (so janky, I know) */
+}
+.shipping{
+	position: absolute;
+	width:50%;
+	margin-left:270px;
+	height:100%;
+}
+
+
+/* php styling */
+#receiptH1{
+	color: #8e3a59;
+	left:0;
+	top:0;
+	margin: 3% 0% 0% 3%;
+}
+#receiptP{
+	margin-left:3%;
+}
+
+code{
+	background-color: black;
+	color: green;
+	font-weight: bold;
+	font-size:11pt;
+	text-shadow: 0px 0px 10px white;
+	padding:5px;
+	border-radius:5px;
+}
+code:hover{
+	color: white;
+	text-shadow: 0px 0px 10px black;
+}
+
+table, th, td {
+	padding:5px;
+	border:1px solid black;
+}
+
+table{
+	width:100%;
+	border-radius:10px;
+}

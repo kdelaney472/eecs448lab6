@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>448 Labs</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" href="./icon.png" />
+	</head>
+	<body class="menu" id="myMenu">
+		<script>
+			function e1hover(){
+				document.getElementById('img1').src = "./lab5/preview1.png";
+				document.getElementById('img2').src = "./lab5/preview2.png";
+				document.getElementById('img3').src = "./lab5/preview3.png";
+				document.getElementById('img4').src = "./lab5/preview4.png";
+			}
+			function e2hover(){
+				document.getElementById('img1').src = "./lab6/preview1.png";
+				document.getElementById('img2').src = "./lab6/preview2.png";
+				document.getElementById('img3').src = "./lab6/preview3.png";
+				document.getElementById('img4').src = "./lab6/preview4.png";
+			}
+			function init(){
+				document.getElementById('img1').src = "";
+				document.getElementById('img2').src = "";
+				document.getElementById('img3').src = "";
+				document.getElementById('img4').src = "";
+			}
+		</script>
+		<div class="sidebar" id="navbar">
+			<div onmouseover="e1hover()" onmouseout="init()">
+				<a class="navLinks"  id="link1" href="./lab5/index.html">Lab 5</a>
+			</div><br>
+			<div onmouseover="e2hover()" onmouseout="init()">
+			<a class="navLinks" id="link2" href="./lab6/index.html">Lab 6</a>
+			</div><br>
+		</div>
+		<div class="hide">
+			<h1>Preview</h1>
+			<img src="" id="img1" width="47.5%"><span style="padding-left:5%;"><img src="" id="img2" width="47.5%">
+			<br>
+			<img src="" id="img3" width="47.5%"><span style="padding-left:5%;"><img src="" id="img4" width="47.5%">
+		</div>
+	</body>
+</html>

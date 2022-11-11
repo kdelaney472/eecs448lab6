@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>448Lab5 Exercise 4</title>
+		<script type="text/javascript" src="scripts.js" ></script>
+		<link rel="stylesheet" href="../ex3/style.css" />
+		<link rel="icon" href="../icons/icon4.png" />	
+	</head>
+	<body id="e4"> 
+		<div id="e4control">
+			<h1>Border</h1>
+			<h3>Red<span style="font-weight:normal;">(0-255)</span>:<input type="text" id="bo_r" value="" maxlength="3" style="background-color:#ff7f7f;"></input></h3>
+			<h3>Green<span style="font-weight:normal;">(0-255)</span>:<input type="text" id="bo_g" value="" maxlength="3" style="background-color:rgb(127,255,127);"></input></h3>
+			<h3>Blue<span style="font-weight:normal;">(0-255)</span>:<input type="text" id="bo_b" value="" maxlength="3" style="background-color:rgb(157,157,255);"></input></h3>
+			<h3>Width:<input type="text" id="bo_wth" value=""></input></h3>
+			<h1>Background Color</h1>
+			<h3>Red<span style="font-weight:normal;">(0-255)</span>:<input type="text" id="bg_r" value="" maxlength="3" style="background-color:#ff7f7f;"></input></h3>
+			<h3>Green<span style="font-weight:normal;">(0-255)</span>:<input type="text" id="bg_g" value="" maxlength="3" style="background-color:rgb(127,255,127);"></input></h3>
+			<h3>Blue<span style="font-weight:normal;">(0-255)</span>:<input type="text" id="bg_b" value="" maxlength="3" style="background-color:rgb(157,157,255);"></input></h3>
+			<button id="e4submit" onclick="change()">Make Changes</button>
+		</div>
+		<script>
+			//these are just to allow the user to hit enter to click the button. For some reason this code didn't work in the scripts.js file, but it works inline here. 
+			let input = document.getElementById("e4control"); 
+			input.addEventListener("keypress", function(event) {
+			  if (event.key === "Enter") {
+				event.preventDefault();
+				change();
+			  }
+			});
+		</script>
+		<p id="e4text">
+			He climbed the construction site as if it were solid,
+			He built in the landing four magical walls,
+			Brick by brick in a logical design,
+			His eyes dulled by the concrete and traffic,
+			He sat down to rest as though he were a prince,
+			He ate beans and rice as if it were the best,
+			He drank and sobbed as if he were a machine,
+			He danced and laughed as if he were the next one,
+			And he stumbled in the sky as though listening to music,
+			And he floated in the air as if it were Saturday...
+
+			<br><br>
+			When I look back, boy, I must have been green
+			Bopping in the country, fishing in a stream
+			Looking for an answer, trying to find a sign
+			Until I saw your city lights, honey, I was blind
+			They said, get back, honky cat
+			Better get back to the woods
+			Well, I quit those days and my redneck ways
+			And, oh, change is gonna do me good
+			You better get back, honky cat
+			Living in the city ain't where it's at
+			It's like trying to find gold in a silver mine
+			It's like trying to drink whisky, oh, from a bottle of wine
+			Well, I read some books and I read some magazines
+			About those high-class ladies down in New Orleans
+			And all the fools back home, well, said I was a fool
+			They said, oh, "Believe in the Lord" is the golden rule
+			They said, get back, honky cat
+			Better get back to the woods
+			Well I quit those days and my redneck ways
+			And, ooh, oh, change is gonna do me good
+			You better get back, honky cat
+			Living in the city ain't where it's at
+			It's like trying to find gold in a silver mine
+			It's like trying to drink whisky, oh, from a bottle of wine
+			They said, stay at home, boy, you gotta tend the farm
+			Living in the city, son, is gonna break your heart
+			But how can you stay when your heart says no
+			Ha, how can you stop when your feet say go
+			You better get back, honky cat
+			Better get back to the woods
+			Well, I quit those days and my redneck ways
+			And, ooh, oh, the change is gonna do me good
+			You better get back, honky cat
+			Living in the city ain't where it's at
+			It's like trying to find gold in a silver mine
+			It's like trying to drink whisky, oh, from a bottle of wine
+		</p>
+	</body>
+</html>

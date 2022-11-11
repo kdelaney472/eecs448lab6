@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>448Lab 6 Menu</title>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="icon" href="icon.png" />
+	</head>
+	<body class="menu" id="myMenu">
+		<script>
+			function e1hover(){
+				document.getElementById('myImg').src = "preview1.png";
+			}
+			function e2hover(){
+				document.getElementById('myImg').src = "preview2.png";
+			}
+			function e3hover(){
+				document.getElementById('myImg').src = "preview3.png";
+			}
+			function init(){
+				document.getElementById('myImg').src = "";
+			}
+		</script>
+		<div class="sidebar" id="navbar">
+			<div onmouseover="e1hover()" onmouseout="init()">
+				<a class="navLinks"  id="link1" href="./ex1/ex1.php">Exercise 1</a>
+			</div><br>
+			<div onmouseover="e2hover()" onmouseout="init()">
+			<a class="navLinks" id="link2" href="./ex2/quiz.html">Exercise 2</a>
+			</div><br>
+			<div onmouseover="e3hover()" onmouseout="init()">
+			<a class="navLinks" id="link3" href="./ex3/customerFrontend.html">Exercise 3</a>
+			</div><br>
+		</div>
+		<div class="hide">
+			<h1>Lab6</h1>
+			<img src="" id="myImg" width="100%">
+		</div>
+	</body>
+</html>

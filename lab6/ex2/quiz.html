@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>448Lab6 Exercise 2</title>
+		<?php include 'quiz.php'; ?>	
+	</head>
+	<body style="padding:25px;"> 
+		<h1 style="font-family:courier;">QUIZ: How much do you remember about Thomas?</h1>
+		<form style="font-family:courier;" action="quiz.php" method="post">
+			<p><b>Question 1: </b>What is Thomas?</p>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="human" name="whatTom" value="A human">
+					<label for="human">A human</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom;" id="dog" name="whatTom" value="A dog">
+					<label for="dog">A dog</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom;" id="fish" name="whatTom" value="A fish">
+					<label for="fish">A fish</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom;" id="marble" name="whatTom" value="A marble">
+					<label for="marble">A marble</label><br>
+					
+			<p><b>Question 2: </b>Where is Thomas from?</p>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="lakeC" name="whereTom" value="Clinton Lake">
+					<label for="lakeC">Clinton Lake</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="lakeW" name="whereTom" value="Wilson Lake">
+					<label for="lakeW">Wilson Lake</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="lakeO" name="whereTom" value="Lake Olathe">
+					<label for="lakeO">Lake Olathe</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="pacific" name="whereTom" value="Pacific Ocean">
+					<label for="pacific">Pacific Ocean</label><br>
+					
+			<p><b>Question 3: </b>What does Thomas eat?</p>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="chips" name="foodTom" value="Chips">
+					<label for="chips">Chips</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="carrots" name="foodTom" value="Carrots">
+					<label for="carrots">Carrots</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="salmon" name="foodTom" value="Salmon">
+					<label for="salmon">Salmon</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="pebbles" name="foodTom" value="Pebbles">
+					<label for="pebbles">Pebbles</label><br>
+					
+			<p><b>Question 4: </b>What song does Thomas like to listen to?</p>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="B4" name="songTom" value="B4 by Ginger Root">
+					<label for="B4">"B4" by Ginger Root</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="kila" name="songTom" value="Jasmine by Kila">
+					<label for="kila">"Jasmine" by Kila</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="lachrimae" name="songTom" value="Lachrimae by John Dowland">
+					<label for="lachrimae">"Lachrimae" by John Dowland</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="skyrim" name="songTom" value="Secunda by Jeremy Soule">
+					<label for="skyrim">"Secunda" by Jeremy Soule</label><br>  
+					
+			<p><b>Question 5: </b>Where can the answers to the questions above be found?</p>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="bio" name="answerTom" value="Profile page from Lab 5 Exercise 3">
+					<label for="bio">Profile page from <a href="../../lab5/ex3/ex3.html" target="_blank" rel="noopener noreferrer">Lab 5 Exercise 3</a></label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="google" name="answerTom" value="Google">
+					<label for="google">Google</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="watson" name="answerTom" value="Watson Library">
+					<label for="watson">Watson Library</label><br>
+				<input type="radio" style="width:17px; height:17px;vertical-align: bottom; " id="all" name="answerTom" value="All of the above">
+					<label for="all">All of the above</label><br>
+					
+					
+			<br><br><input style="font-family:courier; padding:10px; border-radius:10px;" type="submit" name="Submit Quiz" value="Submit Quiz">
+		</form>
+	</body>
+</html>

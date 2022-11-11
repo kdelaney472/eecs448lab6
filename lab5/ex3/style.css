@@ -1,0 +1,177 @@
+p{
+	color: #000000;
+	font-family: arial;
+	font-size: 17pt;
+	background-color:#f2f2f2;
+	padding:15px;
+	padding-left:13px;
+	border-radius:5px;
+}
+
+h1{
+	background-color:#8b008b;
+	color: white;
+	text-shadow: black -3px 3px;
+	padding:4px;
+	padding-left:13px;
+	font-family: arial;
+	font-size: 30pt;
+	border-radius:5px;
+}
+h1:hover{
+	font-family: courier;
+}
+
+h3{
+	color: black;
+	font-family: courier;
+	text-align: right;
+}
+
+input{
+	border-radius:5px;
+	width: 30px;
+	text-align: center;
+	padding:3px;
+	font-family: courier;
+}
+input#bo_wth{
+	width: 200px;
+}
+
+.sidebar{
+	width: 400px;
+	position: fixed; /* fixed for not being scrollable, absolute for being scrollable */
+	left: 0;
+	top:0;
+	background-color: #c0c0c0 ;
+	height: 90%;
+	margin: 25px;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#profile:hover{
+	width:60%;
+}
+
+.content{
+	margin-left: 500px;
+	margin-right: 25px;
+	background-color: #c0c0c0;
+	/* height: 700px;   taken out because the videos fill up the size */
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	padding: 40px;
+}
+
+#e4control{
+	width: 400px;
+	position: fixed; /* fixed for not being scrollable, absolute for being scrollable */
+	left: 0;
+	top:0;
+	height: 90%;
+	margin: 25px;
+	padding: 10px;
+}
+
+#e4submit{
+	font-family: Courier; 
+	float: right;
+	padding: 5px;
+	padding-left:15px;
+	padding-right:15px;
+	font-weight: bold;
+	background-color: lightgreen;
+	font-size: 15pt;
+	border-radius: 20px;
+}
+
+#e4submit:hover{
+	font-size:15.1pt;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#e4text{
+	margin-left: 500px;
+	margin-right: 25px;
+	/* height: 700px;   taken out because the videos fill up the size */
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	background-color: rgb(242,242,242);
+	border-style: solid;
+	border-width: 3px; /* 3px is in the middle between thin and thick settings, so it is good for testing to distinquish */
+	border-color: rgb(0,0,0);
+}
+
+body{
+	background-image: url(wee.gif);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #c2b280;
+	
+	margin: 0;
+	padding: 0;
+}
+body.menu{
+	background-image: url(../menuBackground.gif);
+	background-color: black;
+	line-height: 2.2;
+}
+body#e4{
+	background-image: url();
+	
+}
+
+.navLinks{
+	font-size:45pt;
+	padding-left: 15px;
+	
+}
+#navbar:hover + .hide{
+	display:block;
+	margin-left: 500px;
+	margin-right: 25px;
+	background-color: #c0c0c0;
+	/* height: 700px;   taken out because the videos fill up the size */
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	padding: 40px;
+}
+
+.hide{
+	display:none;
+	margin-left: 500px;
+	margin-right: 25px;
+	background-color: #c0c0c0;
+	/* height: 700px;   taken out because the videos fill up the size */
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	padding: 40px;
+}
+
+a{
+	color: #8b008b;
+	font-family: courier;
+	font-weight: bold;
+}
+
+a:hover{
+	background-color: #b0e0e6 ;
+	color: blue;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>448Lab5 Exercise 1</title>
+		<script type="text/javascript" src="scripts.js" ></script>
+		<link rel="icon" href="../icons/icon1.png" />
+	</head>
+	<body id="myBody">
+		<center>
+		<h1 style="font-family:'Courier New'">Reset Password</h1>
+		<p style="font-family:'Courier New'">Enter New Password: <input type="password" id="pw0" value=""></p> 
+		<p style="font-family:'Courier New'">Retype Password: <input type="password" id="pw1" value=""></p> 
+		<button style="font-family:'Courier New'" id="submit" onclick="validate()">Validate</button>
+		</center>
+		<script>
+			//these are just to allow the user to hit enter to click the button. For some reason this code didn't work in the scripts.js file, but it works inline here. 
+			let input = document.getElementById("myBody"); 
+			input.addEventListener("keypress", function(event) {
+			  if (event.key === "Enter") {
+				event.preventDefault();
+				validate();
+			  }
+			});
+		</script>
+	</body>
+</html>
